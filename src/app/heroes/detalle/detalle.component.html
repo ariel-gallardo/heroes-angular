@@ -1,0 +1,13 @@
+<div *ngIf="detalleService.heroe">
+    <div class="text-center">
+        <h3>Detalles</h3>
+        <ul class="list-unstyled">
+            <li><label class="col-lg-2 text-right" for="id">id:</label><input name="id"
+                    [(ngModel)]="detalleService.heroe.id" readonly></li>
+            <li><label class="col-lg-2 text-right" for="nombre">nombre:</label><input name="nombre"
+                    [(ngModel)]="detalleService.heroe.nombre"></li>
+            <li><label class="col-lg-2 text-right" for="elemento">elemento:</label><input name="elemento"
+                    [(ngModel)]="detalleService.heroe.elemento"></li>
+        </ul>
+    </div>
+</div>
