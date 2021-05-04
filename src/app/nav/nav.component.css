@@ -3,3 +3,16 @@ a:hover{
     font-size: 1.1em;
     transition: all 1s;
 }
+
+a{
+    transition: all 1s;
+}
+
+.nav{
+    transition: all 1s;
+}
+
+.nav:hover{
+    box-shadow: 5px 5px rgba(44,44,44,0.5);
+    transition: box-shadow 1s;
+}

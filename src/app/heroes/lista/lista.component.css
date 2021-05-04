@@ -1,5 +1,6 @@
 .detalle{
     background-color: lightgray;
+    transition: 0.8s;
 }
 
 .detalle:hover{
