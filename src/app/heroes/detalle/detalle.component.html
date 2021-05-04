@@ -1,4 +1,4 @@
-<div *ngIf="detalleService.heroe">
+<div *ngIf="detalleService.heroe; else noHayHeroe">
     <div class="text-center">
         <h3>Detalles</h3>
         <ul class="list-unstyled">
@@ -11,3 +11,6 @@
         </ul>
     </div>
 </div>
+<ng-template #noHayHeroe>
+    <h1 class="text-center my-2">Seleccionar un heroe de la lista primero</h1>
+</ng-template>

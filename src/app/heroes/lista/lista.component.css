@@ -1,0 +1,15 @@
+.detalle{
+    background-color: lightgray;
+}
+
+.detalle:hover{
+    background-color: gray;
+    color:white;
+    transition: all 0.5s;
+}
+
+.detalle.selected{
+    background-color: black;
+    color:white;
+    transition: all 0.3s;
+}

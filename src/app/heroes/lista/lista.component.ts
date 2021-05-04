@@ -10,7 +10,7 @@ import Heroe from '../heroe';
 })
 export class ListaComponent implements OnInit {
 
-  constructor(private listaService : ListaService, private detalleService : DetalleService) { }
+  constructor(private listaService : ListaService, public detalleService : DetalleService) { }
 
   heroes? : Heroe[]
 

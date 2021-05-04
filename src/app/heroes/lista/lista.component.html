@@ -1,7 +1,7 @@
 <div>
     <h3 class="text-center text-uppercase">lista de heroes</h3>
-    <ul class="list-unstyled">
-        <li *ngFor="let heroe of heroes;" class="row my-1 border rounded" (click)="seleccionar(heroe)">
+    <ul class="list-unstyled col-lg-3 mx-auto">
+        <li *ngFor="let heroe of heroes;" class="row my-1 border rounded detalle" (click)="seleccionar(heroe)" [class.selected]="heroe === detalleService.heroe">
             <span class="bg-dark col-lg-2 text-center py-2"><b class="text-white">{{heroe.id}}</b></span>
             <span class="py-lg-2 ml-3">{{heroe.nombre}}</span>
         </li>
